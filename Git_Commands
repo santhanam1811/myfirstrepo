@@ -1,0 +1,131 @@
+
+What is Git?
+Git is a distributed version control system that helps you:
+
+Track changes in your code. 
+Collaborate with others without overwriting work. 
+Roll back to previous versions if needed.
+
+✅ 1. Setup & Configuration
+
+git config --global user.name "Your Name"
+Sets your name for commits globally. 
+
+git config --global user.email "your.email@example.com"
+Sets your email for commits globally. 
+
+git config --list
+Shows all current Git configurations.
+✅ 2. Starting a Repository
+
+git init
+Initialize a new Git repository in the current folder. 
+
+git clone <repo-url>
+Clone an existing remote repository to your local machine.
+✅ 3. Checking Status
+
+git status
+Shows which files are modified, staged, or untracked. 
+
+
+ ✅ 4. Adding Files
+
+git add <file>
+Stage a specific file for commit. 
+
+git add .
+Stage all changes in the current directory. 
+
+
+ ✅ 5. Committing Changes
+
+git commit -m "Commit message"
+Commit staged changes with a message. 
+
+git commit -am "Commit message"
+Add and commit tracked files in one step. 
+
+
+ ✅ 6. Branching
+
+git branch
+List all branches. 
+
+git branch <branch-name>
+Create a new branch. 
+
+git checkout <branch-name>
+Switch to a branch. 
+
+git switch <branch-name> (modern alternative to checkout) 
+git merge <branch-name>
+Merge another branch into the current branch. 
+
+
+ ✅ 7. Remote Operations
+
+git remote -v
+View remote repositories. 
+
+git push origin <branch>
+Push local commits to remote branch. 
+
+git pull origin <branch>
+Fetch and merge changes from remote branch. 
+
+git fetch
+Download changes from remote without merging. 
+
+
+ ✅ 8. Viewing History
+
+git log
+View commit history. 
+
+git log --oneline --graph --decorate
+Compact history with branch visualization. 
+
+
+ ✅ 9. Comparing Changes
+
+git diff
+Show changes not staged. 
+
+git diff --staged
+Show staged changes ready for commit. 
+
+
+ ✅ 10. Undoing Changes
+
+git reset <file>
+Unstage a file. 
+
+git checkout -- <file>
+Discard changes in a file. 
+
+git revert <commit>
+Undo a commit by creating a new one. 
+
+
+ ✅ 11. Stashing
+
+git stash
+Save changes temporarily without committing. 
+
+git stash pop
+Apply stashed changes back. 
+
+
+ ✅ 12. Tags
+
+git tag <tag-name>
+Create a tag for a specific commit. 
+
+git push origin --tags
+Push tags remotely.
+
+✅ 13. Aliases for Efficiency
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
